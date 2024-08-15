@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       banner:{
-        imageUrl:'https://online-teach-file.oss-cn-beijing.aliyuncs.com/cms/2019/11/14/297acd3b-b592-4cfb-a446-a28310369675.jpg',
+        imageUrl:'https://guli-photos.oss-cn-hangzhou.aliyuncs.com/2024/08/15/024725d74ec44b9da8b716a6ea8ed7eajichuban.jpg',
         
       },//这里边写不写属性都可,因为程序会自动把页面绑定的属性添加进去
       saveBtnDisabled: false, // 保存按钮是否禁用
@@ -72,7 +72,7 @@ export default {
         this.getBannerInfo(id)//进行回显
       }else{
         this.banner = {
-          imageUrl:'https://online-teach-file.oss-cn-beijing.aliyuncs.com/cms/2019/11/14/297acd3b-b592-4cfb-a446-a28310369675.jpg'
+          imageUrl:'https://guli-photos.oss-cn-hangzhou.aliyuncs.com/2024/08/15/024725d74ec44b9da8b716a6ea8ed7eajichuban.jpg'
         }
       }
     },
@@ -98,7 +98,7 @@ export default {
         });
       })
       //回到列表页面,进行路由跳转
-      this.$router.push({path:'/banner/list'})
+      this.$router.push({path:'/cms/banner/list'})
     },
     //根据id查询banner
     getBannerInfo(id){
@@ -122,7 +122,7 @@ export default {
         });
       })
        //回到列表页面,路由跳转
-      this.$router.push({path:'/banner/list'})
+      this.$router.push({path:'/cms/banner/list'})
        
     },
     handleAvatarSuccess(res,file){//头像上传成功后
