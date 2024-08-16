@@ -111,7 +111,7 @@ const user = {
     LogOut({ commit, state }) {
       return new Promise((resolve, reject) => {
         logout(state.token).then(() => {
-          debugger
+          // debugger
           commit('SET_TOKEN', '')// 清空前端vuex中存储的数据
           commit('SET_ROLES', [])// 清空前端vuex中存储的数据
           commit('SET_BUTTONS', [])
@@ -126,7 +126,7 @@ const user = {
     // 前端 登出
     FedLogOut({ commit }) {
       return new Promise(resolve => {
-        debugger
+        // debugger
         commit('SET_TOKEN', '')
         removeToken()
         resolve()
